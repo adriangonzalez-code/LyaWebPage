@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --carbon-black: #36454F;
+  --nude-beige: #D3B8AE;
+  --warm-white: #F5F5DC;
+  --soft-gold: #D4AF37;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: var(--warm-white);
+  color: var(--carbon-black);
+}
