@@ -1,6 +1,6 @@
 [build]
   command = "ng build --prod"
-  publish = "dist/LyaStudio"
+  publish = "dist/lya-studio"
 [build.environment]
   NODE_VERSION = "18"
 [[redirects]]
