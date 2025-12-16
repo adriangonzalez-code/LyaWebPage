@@ -1,17 +1,24 @@
-<section id="hero" class="bg-warm overflow-hidden" style="background-image: url('https://atura.like-themes.com/wp-content/uploads/2021/12/SLIDE_03.jpg'); background-size: cover; background-position: center;">
+<section id="hero" class="bg-warm overflow-hidden relative min-h-screen">
+  <div class="absolute inset-0">
+    <div *ngFor="let image of images; let i = index"
+         class="hero-background-image absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+         [style.background-image]="'url(' + image + ')'"
+         [class.active]="i === currentImageIndex">
+    </div>
+  </div>
+
   <div class="relative min-h-screen flex items-center justify-center">
-    <!-- Capas de fondo curvas -->
     <div class="absolute top-0 left-0 w-full h-full bg-nude rounded-br-[600px] transform -translate-y-1/4 opacity-5 ring-8 ring-inset ring-slate-100"></div>
     <div class="absolute bottom-0 right-0 w-full h-full bg-gold opacity-5 rounded-tl-[800px] transform translate-y-1/4 ring-8 ring-inset ring-slate-100"></div>
 
     <div class="container mx-auto px-4 relative z-10 text-center">
-      <!-- Texto Hero -->
-      <div class="md:w-2/3 lg:w-1/2 mx-auto">
-        <h1 class="text-5xl lg:text-7xl font-bold text-nude mb-4 leading-tight animate-fade-in-up" style="animation-delay: 0.2s;">
+
+      <div class="md:w-2/3 mx-auto">
+        <h1 class="text-5xl lg:text-8xl font-bold text-nude mb-4 leading-tight animate-fade-in-up" style="animation-delay: 0.2s;">
           Estilo y Elegancia en tus Manos.
         </h1>
         <p class="text-xl text-warm mb-8 animate-fade-in-up" style="animation-delay: 0.4s;">
-          Descubre un servicio de manicura y pedicura excepcional. Resalta tu belleza con diseños únicos y productos de alta calidad.
+          Descubre un servicio de manicura y pedicura excepcional. Resalta tu belleza con diseños únicos y productos de alta calidad, porque tus manos y pies merecen lo mejor.
         </p>
         <a href="#contacto"
            class="inline-block px-8 py-3 rounded-full text-sm font-semibold text-carbon shadow-lg bg-gradient-to-r from-nude to-gold hover:opacity-90 transition-opacity duration-300 animate-fade-in-up"
