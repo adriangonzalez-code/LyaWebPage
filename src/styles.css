@@ -6,6 +6,32 @@ html {
   scroll-behavior: smooth;
 }
 
+.mea-culpa-regular {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.playwrite-fr-moderne-normal {
+                         font-family: "Playwrite FR Moderne", cursive;
+                         font-optical-sizing: auto;
+                         font-weight: normal;
+                         font-style: normal;
+                       }
+
 @keyframes fade-in-up {
   from {
     opacity: 0;
