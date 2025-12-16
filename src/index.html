@@ -12,17 +12,23 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-      }
 
-      h1, h2, h3 {
-        font-family: 'Playfair Display', serif;
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              carbon: '#1C1C1C',
+              nude: '#E6D6C9',
+              warm: '#FAF7F4',
+              gold: '#C9A24D'
+            }
+          }
+        }
       }
-    </style>
+    </script>
   </head>
-  <body class="bg-[#FAF8F5] text-[#1C1C1C]">
+  <body class="bg-warm text-carbon">
     <app-root></app-root>
   </body>
 </html>
