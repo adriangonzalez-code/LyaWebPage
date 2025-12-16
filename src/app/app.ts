@@ -1,21 +1,25 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../components/navbar.component';
-import { HeroComponent } from '../components/hero.component';
-import { ServicesComponent } from '../components/services.component';
-import { GalleryComponent } from '../components/gallery.component';
-import { ContactComponent } from '../components/contact.component';
-import { FooterComponent } from '../components/footer.component';
+import {Navbar} from './components/navbar/navbar';
+import {Hero} from './components/hero/hero';
+import {Services} from './components/services/services';
+import {About} from './components/about/about';
+import {Gallery} from './components/gallery/gallery';
+import {Testimonial} from './components/testimonial/testimonial';
+import {Contact} from './components/contact/contact';
+import {Footer} from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    NavbarComponent,
-    HeroComponent,
-    ServicesComponent,
-    GalleryComponent,
-    ContactComponent,
-    FooterComponent
+    Navbar,
+    Hero,
+    Services,
+    About,
+    Gallery,
+    Testimonial,
+    Contact,
+    Footer
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
